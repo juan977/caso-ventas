@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+   <div id="contenedor">
+      <div id="header">
+          <b>CASO SISTEMA DE VENTAS</b></div>
+      <div id="contenido">
+          <div id="section">Producto
+             <input type="search" id="input-search" placeholder="Buscar por codigo de barra o nombre del producto"><br><br>
+             <thead>
+                 <table id="campos" border="0">
+                  <tr>
+                      <th scope="col">ITEM</th>
+                      <th scope="col">CANT</th>
+                      <th scope="col">PRODUCTO</th>
+                      <th scope="col">MARCA</th>
+                      <th scope="col">PRECIO</th>
+                      <th scope="col">IMPORTE</th>
+                  </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Leche evaporada</td>
+                        <td>Gloria</td>
+                        <td>12.30</td>
+                        <td>12.30</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>Leche chocolatada</td>
+                        <td>Laive</td>
+                        <td>5.10</td>
+                        <td>5.10</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>Leche fresca</td>
+                        <td>Laive</td>
+                        <td>3.20</td>
+                        <td>3.20</td>
+                    </tr>
+                 </table><br><br><br>
+                 
+                 <button class="button" style="margin-left: 25px;" id="button"><i class="fal fa-cart-arrow-down"></i>GUARDAR COMPRA</button>
+                 <button class="button1" style="margin-right: 25px;" id="button1">VACIAR CARRITO</button>
+                
+            </thead>
+          </div>
+          <div id="aside">
+                <table id="table1" height="100" width="465" border="0"></table>
+                <div class="flexbox-container">
+                    <div>
+                        <legend>DOCUMENTO</legend>
+                        <select name="letra" id="documento">
+                              <option value="A"></option>
+                              <option value="B">FACTURA</option>
+                              <option value="C">BOLETA</option>
+                        </select>
+                    </div>
+                    <div>
+                        <legend>TIPO DE PAGO</legend>
+                        <select name="letra" id="tipo">
+                              <option value="A"></option>
+                              <option value="B">CONTADO</option>
+                              <option value="C">POR PARTES</option>
+                        </select>
+                    </div>
+                </div>
+                        <legend style="margin-left: 30px;">SERIE</legend>
+                        <input type="number" name="numero" id="serie">
+                        <legend style="margin-left: 30px;">N° DE VENTAS</legend>
+                        <input type="number" name="numero" id="n_venta">
+                        <legend style="margin-left: 30px;">FECHA DE COMPRA</legend>
+                        <input type="date" name="fecha" id="fecha">
+                        <legend style="margin-left: 30px;">PROVEEDOR</legend>
+                        <input type="text" name="provedor" id="proveedor"><br>
+          </div>
+     </body>
+</html>
